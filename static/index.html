@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>한국어 보이스 스튜디오 | Gemini 3.8 Flash TTS</title>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="stylesheet" href="/static/styles.css">
+  <script type="module" src="/static/app.js"></script>
+</head>
+<body>
+<a href="#main" class="skip-link visually-hidden">본문으로 건너뛰기</a>
+
+<div class="topbar-wrap">
+  <header class="topbar">
+    <div class="topbar-inner container">
+      <a class="brand" href="/" aria-label="한국어 보이스 스튜디오 홈">
+        <span class="logo" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 10v4M8 6v12M12 3v18M16 7v10M20 10v4"/></svg>
+        </span>
+        <span class="brand-name">Voice Studio<span class="brand-sub">Korean</span></span>
+      </a>
+      <nav aria-label="주요 기능">
+        <div role="tablist" aria-label="기능" class="tabs">
+          <button role="tab" id="tab-catalog" aria-controls="panel-catalog" aria-selected="true">Curated Preset 보이스</button>
+          <button role="tab" id="tab-design" aria-controls="panel-design" aria-selected="false" tabindex="-1">보이스 디자인</button>
+          <button role="tab" id="tab-replicate" aria-controls="panel-replicate" aria-selected="false" tabindex="-1">보이스 복제</button>
+          <button role="tab" id="tab-voices" aria-controls="panel-voices" aria-selected="false" tabindex="-1">보이스 디자인 조회 및 TTS</button>
+        </div>
+      </nav>
+      <span class="model-tag"><span class="dot" aria-hidden="true"></span>Gemini 3.8 Flash TTS</span>
+    </div>
+  </header>
+</div>
+
+<main id="main" class="container">
+  <div id="config-warning" class="alert" hidden></div>
+
+  <!-- ============ 1. Curated preset voices (play only) ============ -->
+  <section role="tabpanel" id="panel-catalog" aria-labelledby="tab-catalog">
+    <div class="page-head">
+      <div>
+        <p class="eyebrow">Voice Library · ko-KR</p>
+        <h1>한국어 Curated Preset 보이스</h1>
+        <p class="lead">Gemini TTS Extended Voice Library의 한국어 목소리입니다. 목소리마다 성격에 맞춘 샘플 문장을 들어보세요.</p>
+      </div>
+      <dl class="stats" id="cat-stats">
+        <div><dt>보이스</dt><dd id="st-total">–</dd></div>
+        <div><dt>억양</dt><dd id="st-accent">–</dd></div>
+        <div><dt>페르소나</dt><dd id="st-persona">–</dd></div>
+      </dl>
+    </div>
+
+    <div class="toolbar">
+      <div class="search">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <label class="visually-hidden" for="q">검색</label>
+        <input id="q" type="search" placeholder="페르소나, 설명, 샘플 문장, Voice ID 검색">
+      </div>
+      <div class="filters">
+        <label class="visually-hidden" for="f-accent">억양</label>
+        <select id="f-accent"><option value="">모든 억양</option></select>
+        <label class="visually-hidden" for="f-gender">성별</label>
+        <select id="f-gender"><option value="">모든 성별</option></select>
+        <label class="visually-hidden" for="f-pitch">피치</label>
+        <select id="f-pitch"><option value="">모든 피치</option></select>
+        <label class="visually-hidden" for="f-persona">페르소나</label>
+        <select id="f-persona"><option value="">모든 페르소나</option></select>
+        <label class="visually-hidden" for="f-cat">카테고리</label>
+        <select id="f-cat"><option value="">모든 카테고리</option></select>
+      </div>
+    </div>
+    <p class="result-bar"><output id="count"></output></p>
+
+    <ul class="voice-grid" id="rows" role="list" aria-label="한국어 Curated Preset 보이스"></ul>
+  </section>
+
+  <!-- ============ 2. Voice design ============ -->
+  <section role="tabpanel" id="panel-design" aria-labelledby="tab-design" hidden>
+    <div class="page-head">
+      <div>
+        <p class="eyebrow">Voice Design</p>
+        <h1>보이스 디자인</h1>
+        <p class="lead">원하는 목소리를 말로 설명하면 새 목소리를 만들어 프로젝트에 저장합니다. 프롬프트 템플릿을 불러오거나 항목을 직접 고르세요.</p>
+      </div>
+    </div>
+    <div class="grid-2">
+      <form id="design-form" class="card" novalidate>
+        <details class="preset-box" id="preset-box">
+          <summary>프롬프트 템플릿 불러오기 <span class="muted">1,347개</span></summary>
+          <p class="hint tpl-hint">미리 만들어 둔 억양 · 성별 · 역할 · 설명 조합입니다. 선택하면 아래 항목과 프롬프트가 채워지며, 특정 목소리를 복제하지는 않습니다.</p>
+          <div class="preset-filters">
+            <label class="visually-hidden" for="p-q">템플릿 검색</label>
+            <input id="p-q" type="search" placeholder="역할, 설명 검색">
+            <label class="visually-hidden" for="p-accent">템플릿 억양</label>
+            <select id="p-accent"><option value="">모든 억양</option></select>
+            <label class="visually-hidden" for="p-gender">템플릿 성별</label>
+            <select id="p-gender">
+              <option value="">모든 성별</option><option value="Female">여성</option>
+              <option value="Male">남성</option><option value="Unspecified">미지정</option>
+            </select>
+            <label class="visually-hidden" for="p-role">템플릿 페르소나</label>
+            <select id="p-role"><option value="">모든 페르소나</option></select>
+          </div>
+          <ul class="preset-list" id="p-list" role="list"></ul>
+          <p class="hint" id="p-count"></p>
+        </details>
+
+        <h2 class="section-title">기본 정보</h2>
+        <div class="field">
+          <label for="d-name">목소리 이름</label>
+          <input id="d-name" required maxlength="100" placeholder="예: 다정한 부산 투어 가이드">
+        </div>
+        <div class="row-3">
+          <div class="field">
+            <label for="d-accent">억양 / 방언</label>
+            <select id="d-accent"></select>
+          </div>
+          <fieldset class="field">
+            <legend>성별</legend>
+            <div class="segmented">
+              <label><input type="radio" name="d-gender" value="female" checked><span>여성</span></label>
+              <label><input type="radio" name="d-gender" value="male"><span>남성</span></label>
+              <label><input type="radio" name="d-gender" value=""><span>미지정</span></label>
+            </div>
+          </fieldset>
+          <div class="field">
+            <label for="d-age">연령대</label>
+            <select id="d-age">
+              <option value="">선택 안 함</option>
+              <option value="20대">20대</option>
+              <option value="30대">30대</option>
+              <option value="40대">40대</option>
+              <option value="50대">50대</option>
+              <option value="60~70대">60~70대</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="d-role">역할</label>
+          <input id="d-role" list="role-list" placeholder="예: 투어 가이드, 고객센터 상담원, 라디오 진행자">
+          <datalist id="role-list"></datalist>
+        </div>
+
+        <h2 class="section-title">목소리 성격</h2>
+        <fieldset class="field">
+          <legend>톤</legend>
+          <div class="chips" id="d-tones"></div>
+        </fieldset>
+        <fieldset class="field">
+          <legend>상황</legend>
+          <div class="chips" id="d-contexts"></div>
+        </fieldset>
+        <div class="field">
+          <label for="d-extra">추가 설명 <span class="muted">선택</span></label>
+          <textarea id="d-extra" rows="2" placeholder="예: 말끝을 살짝 올리는 밝은 말투"></textarea>
+        </div>
+
+        <h2 class="section-title"><span class="step-no">1</span>목소리 설명 프롬프트 <span class="muted">voices.create · prompted.input</span></h2>
+        <div class="field">
+          <div class="label-row">
+            <label for="d-prompt">어떤 목소리를 만들지 설명하는 문장</label>
+            <button type="button" class="btn btn-ghost btn-sm" id="d-recompose">항목으로 다시 만들기</button>
+          </div>
+          <textarea id="d-prompt" class="mono" rows="4" required minlength="10" aria-describedby="d-prompt-hint"></textarea>
+          <p class="hint" id="d-prompt-hint">위 항목으로 자동 작성되며 직접 수정할 수 있습니다. 수정한 뒤에는 위 항목을 바꿔도 덮어쓰지 않습니다.</p>
+        </div>
+
+        <h2 class="section-title"><span class="step-no">2</span>들어볼 발화 <span class="muted">generate_content · text</span></h2>
+        <div class="field">
+          <div class="label-row">
+            <label for="d-utter">새 목소리로 읽을 문장</label>
+            <button type="button" class="btn btn-ghost btn-sm" id="d-utter-gen">✨ 프롬프트에 맞게 다시 만들기</button>
+          </div>
+          <textarea id="d-utter" rows="3" required aria-describedby="d-utter-hint d-utter-status">안녕하세요! 새로 만든 제 목소리예요. 오늘 하루도 즐겁게 보내세요.</textarea>
+          <p class="hint" id="d-utter-hint">①의 역할 · 억양 · 상황에 맞는 대사를 자동으로 만듭니다. 직접 고치면 그 뒤로는 자동으로 바꾸지 않습니다.</p>
+          <p class="status" id="d-utter-status" role="status"></p>
+        </div>
+
+        <div class="actions">
+          <button type="button" class="btn" id="d-reset">초기화</button>
+          <button type="submit" class="btn btn-primary" id="d-submit">목소리 생성하고 듣기</button>
+        </div>
+        <p class="status" id="d-status" role="status"></p>
+      </form>
+
+      <aside class="card sticky-side" id="design-result" aria-labelledby="design-result-title">
+        <h2 id="design-result-title" class="section-title">결과</h2>
+        <div id="d-result-body" class="empty">
+          아직 생성한 목소리가 없습니다.
+        </div>
+        <p class="hint">생성된 목소리는 프로젝트에 저장되며 마지막 사용 후 1년간 유지됩니다. 샘플 오디오는 서버에 저장하지 않습니다.</p>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============ 3. Voice replication ============ -->
+  <section role="tabpanel" id="panel-replicate" aria-labelledby="tab-replicate" hidden>
+    <div class="page-head">
+      <div>
+        <p class="eyebrow">Voice Replication</p>
+        <h1>보이스 복제</h1>
+        <p class="lead">동의문과 짧은 문단을 읽으면 내 목소리로 말하는 합성 음성을 만들 수 있습니다.</p>
+      </div>
+    </div>
+
+    <div class="replicate-layout">
+      <ol class="steps" id="r-steps">
+        <li aria-current="step"><span>이용 안내 · 동의</span></li>
+        <li><span>동의문 녹음</span></li>
+        <li><span>샘플 문장 녹음</span></li>
+        <li><span>생성 · 테스트</span></li>
+      </ol>
+
+      <div>
+        <!-- Step 1 -->
+        <div class="card r-step" data-step="1">
+          <h2 class="section-title">이용 안내 및 동의</h2>
+          <ul class="info-list">
+            <li>목소리를 복제하려면 <strong>같은 사람</strong>의 녹음 두 개가 필요합니다: ① 한국어 동의문 낭독 ② 10~30초 분량의 샘플 문장 낭독</li>
+            <li>Google은 동의문 녹음을 받아쓴 내용이 공식 동의문과 일치하는지 확인합니다. 문구를 <strong>한 글자도 빠짐없이</strong> 읽어 주세요.</li>
+            <li>복제된 목소리는 Google Cloud 프로젝트에 저장되며, <strong>마지막으로 사용한 뒤 1년이 지나면 만료</strong>됩니다. '보이스 디자인 조회 및 TTS' 탭에서 언제든 삭제할 수 있습니다.</li>
+            <li>녹음 원본(동의문, 샘플)은 생성 요청에만 쓰이고 <strong>이 서버에 저장되지 않습니다</strong>.</li>
+            <li>조용한 곳에서 마이크와 가까이, 평소 말투로 자연스럽게 읽어 주세요.</li>
+          </ul>
+          <fieldset class="field consent-box">
+            <legend>다음 항목에 모두 동의해야 진행할 수 있습니다.</legend>
+            <label class="check"><input type="checkbox" class="r-consent"> 녹음할 목소리는 <strong>본인의 목소리</strong>입니다.</label>
+            <label class="check"><input type="checkbox" class="r-consent"> 본인은 <strong>만 19세 이상 성인</strong>입니다.</label>
+            <label class="check"><input type="checkbox" class="r-consent"> Google Cloud로 내 목소리의 합성 모델을 만들고, 이 모델이 프로젝트에 저장되는 것(1년 만료)에 동의합니다.</label>
+          </fieldset>
+          <div class="field">
+            <label for="r-name">복제 목소리 이름</label>
+            <input id="r-name" maxlength="100" value="내 목소리">
+          </div>
+          <div class="actions">
+            <button type="button" class="btn btn-primary" id="r-next-1" disabled>다음: 동의문 녹음</button>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="card r-step" data-step="2" hidden>
+          <h2 class="section-title">동의문 녹음</h2>
+          <p class="lead-sm">녹음 버튼을 누르고 아래 문장을 <strong>그대로</strong> 읽은 뒤, 정지 버튼을 누르세요.</p>
+          <blockquote class="read-text" id="r-consent-text" lang="ko"></blockquote>
+          <div class="recorder" id="rec-consent"></div>
+          <div class="actions">
+            <button type="button" class="btn" data-goto="1">이전</button>
+            <button type="button" class="btn btn-primary" id="r-next-2" disabled>다음: 샘플 문장 녹음</button>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="card r-step" data-step="3" hidden>
+          <div class="label-row">
+            <h2 class="section-title">샘플 문장 녹음 <span class="muted">10~30초</span></h2>
+            <div class="sample-switch">
+              <button type="button" class="btn btn-ghost btn-icon" id="r-sample-prev" aria-label="이전 문단">‹</button>
+              <span id="r-sample-idx" aria-live="polite"></span>
+              <button type="button" class="btn btn-ghost btn-icon" id="r-sample-next" aria-label="다음 문단">›</button>
+            </div>
+          </div>
+          <p class="lead-sm">아래 문단을 평소 말투로 자연스럽게 읽어 주세요. 30초가 되면 녹음이 자동으로 멈춥니다.</p>
+          <blockquote class="read-text read-long" id="r-sample-text" lang="ko"></blockquote>
+          <div class="recorder" id="rec-source"></div>
+          <div class="actions">
+            <button type="button" class="btn" data-goto="2">이전</button>
+            <button type="button" class="btn btn-primary" id="r-next-3" disabled>다음: 생성</button>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="card r-step" data-step="4" hidden>
+          <h2 class="section-title">목소리 생성 및 테스트</h2>
+          <p class="lead-sm">녹음 두 개를 확인한 뒤 생성 버튼을 누르세요.</p>
+          <div class="review">
+            <div class="review-item"><h3>동의문</h3><audio id="r-review-consent" controls></audio></div>
+            <div class="review-item"><h3>샘플 문장</h3><audio id="r-review-source" controls></audio></div>
+          </div>
+          <div class="actions">
+            <button type="button" class="btn" data-goto="3">이전</button>
+            <button type="button" class="btn btn-primary" id="r-create">복제 목소리 생성</button>
+          </div>
+          <p class="status" id="r-status" role="status"></p>
+          <div id="r-result" class="result-box" hidden>
+            <h3>내 복제 목소리로 들어보기</h3>
+            <div class="tts-inline">
+              <label for="r-test-text" class="visually-hidden">테스트 문장</label>
+              <input id="r-test-text" value="안녕하세요, 이건 Gemini 3.8 Flash TTS로 만든 제 목소리예요.">
+              <button type="button" class="btn btn-primary" id="r-test-btn">재생</button>
+            </div>
+            <audio id="r-test-audio" controls hidden></audio>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 4. Designed voices: browse + TTS ============ -->
+  <section role="tabpanel" id="panel-voices" aria-labelledby="tab-voices" hidden>
+    <div class="page-head">
+      <div>
+        <p class="eyebrow">My Voices</p>
+        <h1>보이스 디자인 조회 및 TTS</h1>
+        <p class="lead">프로젝트에 저장된 목소리를 조회하고, 목소리를 선택해 원하는 문장과 스타일로 음성을 만듭니다.</p>
+      </div>
+    </div>
+    <div class="voices-layout">
+      <div class="card">
+        <div class="label-row">
+          <h2 class="section-title">저장된 목소리 <span class="muted" id="v-count"></span></h2>
+          <button type="button" class="btn btn-ghost btn-sm" id="v-refresh">새로고침</button>
+        </div>
+        <fieldset class="segmented v-filter" id="v-filter">
+          <legend class="visually-hidden">종류</legend>
+          <label><input type="radio" name="v-type" value="" checked autocomplete="off"><span>전체</span></label>
+          <label><input type="radio" name="v-type" value="prompted" autocomplete="off"><span>보이스 디자인</span></label>
+          <label><input type="radio" name="v-type" value="replicated" autocomplete="off"><span>보이스 복제</span></label>
+        </fieldset>
+        <fieldset class="v-pick">
+          <legend class="visually-hidden">TTS에 사용할 목소리 선택</legend>
+          <ul id="v-list" class="voice-list" role="list"></ul>
+        </fieldset>
+        <p class="status" id="v-status" role="status"></p>
+      </div>
+
+      <form class="card sticky-side" id="tts-form">
+        <h2 class="section-title">TTS 만들기</h2>
+        <input type="hidden" id="t-voice">
+        <div id="t-selected" class="t-selected empty">왼쪽 목록에서 목소리를 선택하세요.</div>
+        <div class="field">
+          <label for="t-text">읽을 문장</label>
+          <textarea id="t-text" rows="5" required>안녕하세요! 오늘 날씨가 정말 좋네요. <laugh> 산책하기 딱 좋은 날이에요.</textarea>
+        </div>
+        <div class="field">
+          <span class="label">오디오 태그 넣기</span>
+          <div class="chips" id="t-tags"></div>
+        </div>
+        <div class="field">
+          <label for="t-style">스타일 <span class="muted">speech_metadata.style · 선택</span></label>
+          <div class="chips" id="t-style-chips"></div>
+          <input id="t-style" placeholder="예: warm and enthusiastic">
+          <p class="hint">목소리(음색 · 억양)는 그대로 두고, 이번 문장의 감정 · 속도 · 크기만 바꿉니다.</p>
+        </div>
+        <div class="actions">
+          <button type="submit" class="btn btn-primary" id="t-submit" disabled>음성 생성</button>
+        </div>
+        <p class="status" id="t-status" role="status"></p>
+        <div class="player-row">
+          <audio id="t-audio" controls hidden></audio>
+          <a id="t-download" class="btn btn-sm" download="tts.wav" hidden>WAV 다운로드</a>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer container">
+  <span>Powered by Gemini 3.8 Flash TTS on Gemini Enterprise Agent Platform</span>
+  <span>녹음 원본 · 생성 오디오는 서버에 저장하지 않습니다</span>
+</footer>
+
+<!-- Preview playback (controlled by the play buttons on each voice card) -->
+<audio id="player-audio" preload="none" hidden></audio>
+</body>
+</html>

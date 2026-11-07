@@ -1,0 +1,16 @@
+# secrets / local config (contains PROJECT_ID, bucket)
+.env
+.env.*
+!.env.example
+
+# lockfile pins an internal package mirror; Dockerfile installs from public PyPI
+uv.lock
+
+# local env / build
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# generated audio
+*.wav

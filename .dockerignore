@@ -1,0 +1,8 @@
+.venv
+.env
+__pycache__
+*.wav
+*.png
+.git
+uv.lock
+scripts

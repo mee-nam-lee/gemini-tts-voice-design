@@ -1,0 +1,587 @@
+{
+ "ko-kr-advisor-1": {
+  "text": "계약서에 서명하시기 전에 이 조항은 반드시 확인하셔야 합니다. 나중에 분쟁의 소지가 될 수 있어요.",
+  "style": "Currently on podcast. Voice is warm and engaging",
+  "role": "lawyer"
+ },
+ "ko-kr-advisor-2": {
+  "text": "현재 상황에서는 합의를 먼저 시도해 보시는 것이 시간과 비용 면에서 유리합니다.",
+  "style": "Voice is light, airy, and precise",
+  "role": "lawyer"
+ },
+ "ko-kr-advisor-3": {
+  "text": "말씀하신 내용을 정리해 보면, 법적으로 충분히 다퉈 볼 여지가 있는 사안입니다.",
+  "style": "Voice is comforting someone who is stressed",
+  "role": "lawyer"
+ },
+ "ko-kr-advisor-4": {
+  "text": "계약서에 서명하시기 전에 이 조항은 반드시 확인하셔야 합니다. 나중에 분쟁의 소지가 될 수 있어요.",
+  "style": "Tone is objective, direct, and helpful",
+  "role": "lawyer"
+ },
+ "ko-kr-advisor-5": {
+  "text": "현재 상황에서는 합의를 먼저 시도해 보시는 것이 시간과 비용 면에서 유리합니다.",
+  "style": "Currently on podcast. Voice is warm and engaging",
+  "role": "lawyer"
+ },
+ "ko-kr-advisor-6": {
+  "text": "말씀하신 내용을 정리해 보면, 법적으로 충분히 다퉈 볼 여지가 있는 사안입니다.",
+  "style": "Tone is conversational, slightly dry humor, and warm",
+  "role": "lawyer"
+ },
+ "ko-kr-advisor-7": {
+  "text": "계약서에 서명하시기 전에 이 조항은 반드시 확인하셔야 합니다. 나중에 분쟁의 소지가 될 수 있어요.",
+  "style": "Voice is clear, medium-pitch, and friendly",
+  "role": "lawyer"
+ },
+ "ko-kr-advisor-8": {
+  "text": "현재 상황에서는 합의를 먼저 시도해 보시는 것이 시간과 비용 면에서 유리합니다.",
+  "style": "Currently on the phone. Sounds confident and clear",
+  "role": "lawyer"
+ },
+ "ko-kr-advisor-9": {
+  "text": "말씀하신 내용을 정리해 보면, 법적으로 충분히 다퉈 볼 여지가 있는 사안입니다.",
+  "style": "Currently sitting next to you on an airplane. Sounds confident and clear",
+  "role": "lawyer"
+ },
+ "ko-kr-assistant-1": {
+  "text": "야, 나 오늘 진짜 대박 소식 있어. 일단 앉아 봐, 놀라지 말고 들어.",
+  "style": "Voice is engaging and empathic",
+  "role": "best friend"
+ },
+ "ko-kr-assistant-10": {
+  "text": "얘들아, 밥 먹자! 손 씻고 와서 따뜻할 때 얼른 먹어.",
+  "style": "Voice is resonant and witty",
+  "role": "parent"
+ },
+ "ko-kr-assistant-11": {
+  "text": "이번 주말에 뭐 해? 시간 되면 새로 생긴 카페 같이 가 보자.",
+  "style": "Voice is clear, medium-pitch, and friendly",
+  "role": "friend"
+ },
+ "ko-kr-assistant-12": {
+  "text": "괜찮아, 너 진짜 잘하고 있어. 오늘은 맛있는 거 먹고 푹 쉬자.",
+  "style": "Currently at an appointment. Tone is professional yet approachable",
+  "role": "best friend"
+ },
+ "ko-kr-assistant-2": {
+  "text": "니 내 충전기 또 갖고 갔제? 다 썼으면 제자리에 좀 갖다 놔라.",
+  "style": "Voice is textured, resonant, and soothing",
+  "role": "sibling"
+ },
+ "ko-kr-assistant-3": {
+  "text": "어머, 우리 조카 많이 컸네! 이번 방학에는 이모랑 맛있는 거 먹으러 가자.",
+  "style": "Voice is bright, breezy, and youthful",
+  "role": "aunt/uncle"
+ },
+ "ko-kr-assistant-4": {
+  "text": "엄마가 저녁에 다 같이 밥 묵자 카던데, 니 오늘 몇 시에 들어오노?",
+  "style": "Currently brainstorming in a meeting. Sounds confident and clear",
+  "role": "sibling"
+ },
+ "ko-kr-assistant-5": {
+  "text": "삼촌이 어릴 때는 말이야, 이 동네가 전부 논밭이었어.",
+  "style": "Currently on npr. Voice is warm and engaging",
+  "role": "aunt/uncle"
+ },
+ "ko-kr-assistant-6": {
+  "text": "아이고, 니 또 늦잠 잤나? 빨리 씻고 나온나, 늦겠다.",
+  "style": "Voice is natural and clear",
+  "role": "sibling"
+ },
+ "ko-kr-assistant-7": {
+  "text": "야, 내 충전기 또 가져갔지? 다 쓰면 제자리에 좀 갖다 놔.",
+  "style": "Tone is peer-to-peer and curious",
+  "role": "sibling"
+ },
+ "ko-kr-assistant-8": {
+  "text": "오늘 학교에서 재밌는 일 있었어? 엄마한테 얘기해 줘.",
+  "style": "Currently on npr. Sounds confident and clear",
+  "role": "parent"
+ },
+ "ko-kr-assistant-9": {
+  "text": "엄마가 저녁에 다 같이 밥 먹자는데, 너 오늘 몇 시에 들어와?",
+  "style": "Voice is laid-back, encouraging, and chill",
+  "role": "sibling"
+ },
+ "ko-kr-commercial-1": {
+  "text": "이 재킷은 어깨선이 자연스러워서 청바지에도, 슬랙스에도 잘 어울려요.",
+  "style": "Currently at an appointment. Sounds confident and clear",
+  "role": "fashion consultant"
+ },
+ "ko-kr-commercial-10": {
+  "text": "올가을에는 차분한 브라운 톤이 대세예요. 니트 하나만 바꿔도 분위기가 확 달라지죠.",
+  "style": "Currently at an appointment. Voice is warm and engaging",
+  "role": "fashion consultant"
+ },
+ "ko-kr-commercial-11": {
+  "text": "체형을 보완하려면 상의는 조금 짧게, 하의는 하이웨이스트로 맞춰 보세요.",
+  "style": "Tone is peer-to-peer and curious",
+  "role": "fashion consultant"
+ },
+ "ko-kr-commercial-12": {
+  "text": "이 재킷은 어깨선이 자연스러워서 청바지에도, 슬랙스에도 잘 어울려요.",
+  "style": "Voice is laid-back, encouraging, and chill",
+  "role": "fashion consultant"
+ },
+ "ko-kr-commercial-2": {
+  "text": "여러분 안녕하세요! 오늘은 부산 해운대 맛집 소개해 드릴게예. 진짜 억수로 맛있습니더!",
+  "style": "Voice is textured, resonant, and soothing",
+  "role": "influencer"
+ },
+ "ko-kr-commercial-3": {
+  "text": "올가을에는 차분한 브라운 톤이 대세예요. 니트 하나만 바꿔도 분위기가 확 달라지죠.",
+  "style": "Currently brainstorming in a meeting. Tone is professional yet approachable",
+  "role": "fashion consultant"
+ },
+ "ko-kr-commercial-4": {
+  "text": "이거 요즘 제가 매일 쓰는 건데예, 함 써 보이소. 완전 강추합니더!",
+  "style": "Voice is clear, medium-pitch, and friendly",
+  "role": "influencer"
+ },
+ "ko-kr-commercial-5": {
+  "text": "체형을 보완하려면 상의는 조금 짧게, 하의는 하이웨이스트로 맞춰 보세요.",
+  "style": "Voice is intimate talkshow",
+  "role": "fashion consultant"
+ },
+ "ko-kr-commercial-6": {
+  "text": "여러분 안녕! 오늘은 제가 요즘 푹 빠진 꿀템을 소개해 드릴게요. 끝까지 봐 주세요!",
+  "style": "Voice is textured, resonant, and soothing",
+  "role": "influencer"
+ },
+ "ko-kr-commercial-7": {
+  "text": "이 재킷은 어깨선이 자연스러워서 청바지에도, 슬랙스에도 잘 어울려요.",
+  "style": "Voice is textured, resonant, and soothing",
+  "role": "fashion consultant"
+ },
+ "ko-kr-commercial-8": {
+  "text": "올가을에는 차분한 브라운 톤이 대세예요. 니트 하나만 바꿔도 분위기가 확 달라지죠.",
+  "style": "Currently in an indie film. Voice is warm and engaging",
+  "role": "fashion consultant"
+ },
+ "ko-kr-commercial-9": {
+  "text": "오늘 광안리 야경 보러 왔는데, 와, 진짜 직이네예. 같이 구경하입시더!",
+  "style": "Tone is peer-to-peer and curious",
+  "role": "influencer"
+ },
+ "ko-kr-concierge-1": {
+  "text": "여러분, 이쪽을 봐 주세요. 이곳은 조선 시대에 지어진 궁궐로, 지금부터 함께 천천히 둘러보겠습니다.",
+  "style": "Voice is bright, breezy, and youthful",
+  "role": "tour guide"
+ },
+ "ko-kr-concierge-10": {
+  "text": "대표님, 오후 두 시 회의가 세 시로 변경되었습니다. 자료는 메일로 보내 드렸어요.",
+  "style": "Voice is engaging and empathic",
+  "role": "executive assistant"
+ },
+ "ko-kr-concierge-11": {
+  "text": "오른쪽 창밖으로 보이는 산이 바로 북한산입니다. 사진 찍기 좋은 명소이니 놓치지 마세요.",
+  "style": "Voice is light, airy, and precise",
+  "role": "tour guide"
+ },
+ "ko-kr-concierge-12": {
+  "text": "이 골목은 백 년 넘은 한옥들이 모여 있는 곳이에요. 다음 코스까지는 걸어서 오 분 정도 걸립니다.",
+  "style": "Currently in an oscar winning film. Sounds confident and clear",
+  "role": "tour guide"
+ },
+ "ko-kr-concierge-2": {
+  "text": "대표님, 오후 두 시 회의가 세 시로 바뀌었습니더. 자료는 메일로 보내 드렸어예.",
+  "style": "Voice is bright, breezy, and youthful",
+  "role": "executive assistant"
+ },
+ "ko-kr-concierge-3": {
+  "text": "내일 오전 출장 항공권과 호텔 예약 모두 확정되었습니다.",
+  "style": "Currently on npr. Tone is professional yet approachable",
+  "role": "executive assistant"
+ },
+ "ko-kr-concierge-4": {
+  "text": "여러분, 이쪽을 봐 주세요. 이곳은 조선 시대에 지어진 궁궐로, 지금부터 함께 천천히 둘러보겠습니다.",
+  "style": "Voice is light, airy, and precise",
+  "role": "tour guide"
+ },
+ "ko-kr-concierge-5": {
+  "text": "오른쪽 창밖으로 보이는 산이 바로 북한산입니다. 사진 찍기 좋은 명소이니 놓치지 마세요.",
+  "style": "Voice is natural and clear",
+  "role": "tour guide"
+ },
+ "ko-kr-concierge-6": {
+  "text": "이 골목은 백 년 넘은 한옥들이 모여 있는 곳이에요. 다음 코스까지는 걸어서 오 분 정도 걸립니다.",
+  "style": "Voice is crisp and eager",
+  "role": "tour guide"
+ },
+ "ko-kr-concierge-7": {
+  "text": "여러분, 이쪽을 봐 주세요. 이곳은 조선 시대에 지어진 궁궐로, 지금부터 함께 천천히 둘러보겠습니다.",
+  "style": "Currently at a meditation retreat. Voice is warm and engaging",
+  "role": "tour guide"
+ },
+ "ko-kr-concierge-8": {
+  "text": "오른쪽 창밖으로 보이는 산이 바로 북한산입니다. 사진 찍기 좋은 명소이니 놓치지 마세요.",
+  "style": "Voice is bright, breezy, and youthful",
+  "role": "tour guide"
+ },
+ "ko-kr-concierge-9": {
+  "text": "이 골목은 백 년 넘은 한옥들이 모여 있는 곳이에요. 다음 코스까지는 걸어서 오 분 정도 걸립니다.",
+  "style": "Voice is light, airy, and precise",
+  "role": "tour guide"
+ },
+ "ko-kr-csagent-1": {
+  "text": "많이 힘드셨겠어요. 천천히 말씀해 주세요. 저희가 도와드릴 수 있는 방법을 함께 찾아볼게요.",
+  "style": "Currently in an oscar winning film. Sounds confident and clear",
+  "role": "social worker"
+ },
+ "ko-kr-csagent-10": {
+  "text": "이 제품은 이번 시즌 신상품인데요, 지금 구매하시면 사은품도 함께 챙겨 드려요.",
+  "style": "Voice is light, airy, and precise",
+  "role": "sales associate"
+ },
+ "ko-kr-csagent-11": {
+  "text": "신청 서류는 제가 같이 확인해 드릴게요. 혼자 걱정하지 않으셔도 괜찮습니다.",
+  "style": "Currently in a bookstore. Sounds confident and clear",
+  "role": "social worker"
+ },
+ "ko-kr-csagent-12": {
+  "text": "다음 주에 다시 한번 방문드려서 지내시는 데 불편한 점은 없는지 살펴볼게요.",
+  "style": "Voice is engaging and empathic",
+  "role": "social worker"
+ },
+ "ko-kr-csagent-2": {
+  "text": "고객님, 연락 주셔서 고맙습니더. 주문하신 물건은 내일 오후까지 도착할 겁니더.",
+  "style": "Voice is fast-paced, articulate, energetic",
+  "role": "customer service agent"
+ },
+ "ko-kr-csagent-3": {
+  "text": "찾으시는 사이즈 창고에 있는지 바로 확인해 드릴게요. 잠시만 기다려 주세요.",
+  "style": "Currently sitting on couch. Tone is professional yet approachable",
+  "role": "sales associate"
+ },
+ "ko-kr-csagent-4": {
+  "text": "많이 힘드셨겠어요. 천천히 말씀해 주세요. 저희가 도와드릴 수 있는 방법을 함께 찾아볼게요.",
+  "style": "Currently on the phone. Tone is professional yet approachable",
+  "role": "social worker"
+ },
+ "ko-kr-csagent-5": {
+  "text": "신청 서류는 제가 같이 확인해 드릴게요. 혼자 걱정하지 않으셔도 괜찮습니다.",
+  "style": "Voice is comforting someone who is stressed",
+  "role": "social worker"
+ },
+ "ko-kr-csagent-6": {
+  "text": "이 제품은 이번 시즌 신상품인데요, 지금 구매하시면 사은품도 함께 챙겨 드려요.",
+  "style": "Tone is conversational, slightly dry humor, and warm",
+  "role": "sales associate"
+ },
+ "ko-kr-csagent-7": {
+  "text": "다음 주에 다시 한번 방문드려서 지내시는 데 불편한 점은 없는지 살펴볼게요.",
+  "style": "Tone is enthusiastic, engaging, and fun",
+  "role": "social worker"
+ },
+ "ko-kr-csagent-8": {
+  "text": "많이 힘드셨겠어요. 천천히 말씀해 주세요. 저희가 도와드릴 수 있는 방법을 함께 찾아볼게요.",
+  "style": "Tone is objective, direct, and helpful",
+  "role": "social worker"
+ },
+ "ko-kr-csagent-9": {
+  "text": "찾으시는 사이즈 창고에 있는지 바로 확인해 드릴게요. 잠시만 기다려 주세요.",
+  "style": "Voice is clear, medium-pitch, and friendly",
+  "role": "sales associate"
+ },
+ "ko-kr-podcaster-1": {
+  "text": "오늘 오전, 서울 도심에서 대규모 문화 축제가 열려 수많은 시민들이 현장을 찾았습니다.",
+  "style": "Tone is objective, direct, and helpful",
+  "role": "journalist"
+ },
+ "ko-kr-podcaster-10": {
+  "text": "오늘 귀한 게스트를 모셨습니다. 먼저 청취자분들께 간단히 자기소개 부탁드릴게요.",
+  "style": "Currently on the phone. Sounds confident and clear",
+  "role": "podcast interviewer"
+ },
+ "ko-kr-podcaster-11": {
+  "text": "정부는 내년부터 청년 주거 지원 정책을 대폭 확대한다고 밝혔습니다. 자세한 내용 전해 드립니다.",
+  "style": "Currently sitting next to you on the bus. Sounds confident and clear",
+  "role": "journalist"
+ },
+ "ko-kr-podcaster-12": {
+  "text": "이번 주말 전국에 강한 비가 예보되면서, 기상청은 시설물 관리에 각별히 유의해 달라고 당부했습니다.",
+  "style": "Voice is fast-paced, articulate, energetic",
+  "role": "journalist"
+ },
+ "ko-kr-podcaster-2": {
+  "text": "부산의 저녁을 함께하는 라디오, 오늘도 따뜻한 사연하고 노래로 찾아왔습니더.",
+  "style": "Voice is light, airy, and precise",
+  "role": "radio host"
+ },
+ "ko-kr-podcaster-3": {
+  "text": "오늘 오전, 서울 도심에서 대규모 문화 축제가 열려 수많은 시민들이 현장을 찾았습니다.",
+  "style": "Currently in a bookstore. Voice is warm and engaging",
+  "role": "journalist"
+ },
+ "ko-kr-podcaster-4": {
+  "text": "정부는 내년부터 청년 주거 지원 정책을 대폭 확대한다고 밝혔습니다. 자세한 내용 전해 드립니다.",
+  "style": "Tone is enthusiastic, engaging, and fun",
+  "role": "journalist"
+ },
+ "ko-kr-podcaster-5": {
+  "text": "이번 주말 전국에 강한 비가 예보되면서, 기상청은 시설물 관리에 각별히 유의해 달라고 당부했습니다.",
+  "style": "Voice is light, airy, and precise",
+  "role": "journalist"
+ },
+ "ko-kr-podcaster-6": {
+  "text": "오늘 오전, 서울 도심에서 대규모 문화 축제가 열려 수많은 시민들이 현장을 찾았습니다.",
+  "style": "Currently brainstorming in a meeting. Tone is professional yet approachable",
+  "role": "journalist"
+ },
+ "ko-kr-podcaster-7": {
+  "text": "정부는 내년부터 청년 주거 지원 정책을 대폭 확대한다고 밝혔습니다. 자세한 내용 전해 드립니다.",
+  "style": "Currently on npr. Tone is professional yet approachable",
+  "role": "journalist"
+ },
+ "ko-kr-podcaster-8": {
+  "text": "이번 주말 전국에 강한 비가 예보되면서, 기상청은 시설물 관리에 각별히 유의해 달라고 당부했습니다.",
+  "style": "Voice is highly approachable",
+  "role": "journalist"
+ },
+ "ko-kr-podcaster-9": {
+  "text": "여러분의 퇴근길을 함께하는 저녁 라디오, 오늘도 따뜻한 사연과 음악으로 찾아왔습니다.",
+  "style": "Voice is highly approachable",
+  "role": "radio host"
+ },
+ "ko-kr-storyteller-1": {
+  "text": "새벽 안개가 걷히자, 숲은 서서히 깨어나기 시작합니다. 생명의 하루가 다시 시작되는 순간입니다.",
+  "style": "Voice is laid-back, encouraging, and chill",
+  "role": "nature documentary narrator"
+ },
+ "ko-kr-storyteller-10": {
+  "text": "끝없이 펼쳐진 갯벌 위로 수천 마리의 철새가 내려앉습니다. 이들의 긴 여정은 이제 막 절반을 지났습니다.",
+  "style": "Currently sitting next to you on the bus. Tone is professional yet approachable",
+  "role": "nature documentary narrator"
+ },
+ "ko-kr-storyteller-11": {
+  "text": "깊은 바닷속, 햇빛이 닿지 않는 이곳에도 생명은 놀라운 방식으로 살아가고 있습니다.",
+  "style": "Voice is laid-back, encouraging, and chill",
+  "role": "nature documentary narrator"
+ },
+ "ko-kr-storyteller-12": {
+  "text": "가을이 오면 이 계곡의 단풍나무들은 겨울을 준비하며 저마다의 색으로 물들어 갑니다.",
+  "style": "Voice is light, airy, and precise",
+  "role": "nature documentary narrator"
+ },
+ "ko-kr-storyteller-2": {
+  "text": "새벽 안개가 걷히자, 숲은 서서히 깨어나기 시작합니다. 생명의 하루가 다시 시작되는 순간입니다.",
+  "style": "Tone is conversational, slightly dry humor, and warm",
+  "role": "nature documentary narrator"
+ },
+ "ko-kr-storyteller-3": {
+  "text": "끝없이 펼쳐진 갯벌 위로 수천 마리의 철새가 내려앉습니다. 이들의 긴 여정은 이제 막 절반을 지났습니다.",
+  "style": "Voice is clear, medium-pitch, and friendly",
+  "role": "nature documentary narrator"
+ },
+ "ko-kr-storyteller-4": {
+  "text": "깊은 바닷속, 햇빛이 닿지 않는 이곳에도 생명은 놀라운 방식으로 살아가고 있습니다.",
+  "style": "Currently on npr. Voice is warm and engaging",
+  "role": "nature documentary narrator"
+ },
+ "ko-kr-storyteller-5": {
+  "text": "가을이 오면 이 계곡의 단풍나무들은 겨울을 준비하며 저마다의 색으로 물들어 갑니다.",
+  "style": "Voice is crisp and eager",
+  "role": "nature documentary narrator"
+ },
+ "ko-kr-storyteller-6": {
+  "text": "새벽 안개가 걷히자, 숲은 서서히 깨어나기 시작합니다. 생명의 하루가 다시 시작되는 순간입니다.",
+  "style": "Voice is textured, resonant, and soothing",
+  "role": "nature documentary narrator"
+ },
+ "ko-kr-storyteller-7": {
+  "text": "끝없이 펼쳐진 갯벌 위로 수천 마리의 철새가 내려앉습니다. 이들의 긴 여정은 이제 막 절반을 지났습니다.",
+  "style": "Currently at a meditation retreat. Sounds confident and clear",
+  "role": "nature documentary narrator"
+ },
+ "ko-kr-storyteller-8": {
+  "text": "깊은 바닷속, 햇빛이 닿지 않는 이곳에도 생명은 놀라운 방식으로 살아가고 있습니다.",
+  "style": "Voice is bright, breezy, and youthful",
+  "role": "nature documentary narrator"
+ },
+ "ko-kr-storyteller-9": {
+  "text": "가을이 오면 이 계곡의 단풍나무들은 겨울을 준비하며 저마다의 색으로 물들어 갑니다.",
+  "style": "Tone is reflective, calm, and reassuring",
+  "role": "nature documentary narrator"
+ },
+ "ko-kr-techagent-1": {
+  "text": "이 건물은 자연광이 깊숙이 들어오도록 남쪽 면 전체를 유리로 설계했습니다.",
+  "style": "Voice is textured, resonant, and soothing",
+  "role": "architect"
+ },
+ "ko-kr-techagent-10": {
+  "text": "불편 드려가 죄송합니더. 먼저 공유기 전원을 껐다가 삼십 초 뒤에 다시 켜 보이소.",
+  "style": "Currently on the phone. Voice is warm and engaging",
+  "role": "tech support agent / tech advisor"
+ },
+ "ko-kr-techagent-11": {
+  "text": "거실과 주방 사이 벽을 없애면 공간이 훨씬 넓고 개방감 있게 느껴질 거예요.",
+  "style": "Currently in an oscar winning film. Tone is professional yet approachable",
+  "role": "architect"
+ },
+ "ko-kr-techagent-12": {
+  "text": "외장재는 지역에서 나는 석재를 사용해서 주변 풍경과 자연스럽게 어우러지도록 했습니다.",
+  "style": "Voice is crisp and eager",
+  "role": "architect"
+ },
+ "ko-kr-techagent-2": {
+  "text": "이 건물은예, 바다 쪽으로 창을 크게 내가 어디서든 바다가 보이도록 설계했습니더.",
+  "style": "Voice is relaxed",
+  "role": "architect"
+ },
+ "ko-kr-techagent-3": {
+  "text": "이 건물은 자연광이 깊숙이 들어오도록 남쪽 면 전체를 유리로 설계했습니다.",
+  "style": "Currently sitting next to you on the bus. Tone is professional yet approachable",
+  "role": "architect"
+ },
+ "ko-kr-techagent-4": {
+  "text": "화면 오른쪽 위에 설정 버튼 보이지예? 그거 한번 눌러 보시겠습니꺼?",
+  "style": "Voice is crisp and eager",
+  "role": "tech support agent / tech advisor"
+ },
+ "ko-kr-techagent-5": {
+  "text": "거실과 주방 사이 벽을 없애면 공간이 훨씬 넓고 개방감 있게 느껴질 거예요.",
+  "style": "Voice is cool, confident, and collaborative",
+  "role": "architect"
+ },
+ "ko-kr-techagent-6": {
+  "text": "외장재는 지역에서 나는 석재를 사용해서 주변 풍경과 자연스럽게 어우러지도록 했습니다.",
+  "style": "Currently brainstorming in a meeting. Sounds confident and clear",
+  "role": "architect"
+ },
+ "ko-kr-techagent-7": {
+  "text": "불편을 드려 죄송합니다. 먼저 공유기 전원을 껐다가 삼십 초 후에 다시 켜 주시겠어요?",
+  "style": "Voice is natural and clear",
+  "role": "tech support agent / tech advisor"
+ },
+ "ko-kr-techagent-8": {
+  "text": "이 건물은 자연광이 깊숙이 들어오도록 남쪽 면 전체를 유리로 설계했습니다.",
+  "style": "Currently in an indie film. Sounds confident and clear",
+  "role": "architect"
+ },
+ "ko-kr-techagent-9": {
+  "text": "거실과 주방 사이 벽을 없애면 공간이 훨씬 넓고 개방감 있게 느껴질 거예요.",
+  "style": "Voice is clear, medium-pitch, and friendly",
+  "role": "architect"
+ },
+ "ko-kr-training-1": {
+  "text": "자, 오늘은 아주 간단한 방법을 알려 드릴게요. 첫 번째 단계부터 차근차근 따라와 주세요.",
+  "style": "Voice is comforting someone who is stressed",
+  "role": "instructional video host"
+ },
+ "ko-kr-training-10": {
+  "text": "이 설정 메뉴에서 오른쪽 위 버튼을 누르면 됩니다. 어렵지 않죠? 바로 다음 단계로 넘어가 볼게요.",
+  "style": "Currently in an oscar winning film. Tone is professional yet approachable",
+  "role": "instructional video host"
+ },
+ "ko-kr-training-11": {
+  "text": "팬이 충분히 달궈지면 마늘을 먼저 넣어 주세요. 이 향이 바로 맛의 비결이에요.",
+  "style": "Voice is relaxed",
+  "role": "cooking show host"
+ },
+ "ko-kr-training-12": {
+  "text": "준비물은 딱 세 가지예요. 영상 끝까지 보시면 누구나 쉽게 완성하실 수 있습니다.",
+  "style": "Currently sitting next to you on the bus. Tone is professional yet approachable",
+  "role": "instructional video host"
+ },
+ "ko-kr-training-2": {
+  "text": "자, 오늘은 아주 간단한 방법을 알려 드릴게요. 첫 번째 단계부터 차근차근 따라와 주세요.",
+  "style": "Voice is cool, confident, and collaborative",
+  "role": "instructional video host"
+ },
+ "ko-kr-training-3": {
+  "text": "이 설정 메뉴에서 오른쪽 위 버튼을 누르면 됩니다. 어렵지 않죠? 바로 다음 단계로 넘어가 볼게요.",
+  "style": "Tone is enthusiastic, engaging, and fun",
+  "role": "instructional video host"
+ },
+ "ko-kr-training-4": {
+  "text": "준비물은 딱 세 가지예요. 영상 끝까지 보시면 누구나 쉽게 완성하실 수 있습니다.",
+  "style": "Currently on podcast. Sounds confident and clear",
+  "role": "instructional video host"
+ },
+ "ko-kr-training-5": {
+  "text": "자, 오늘은 아주 간단한 방법을 알려 드릴게요. 첫 번째 단계부터 차근차근 따라와 주세요.",
+  "style": "Voice is textured, resonant, and soothing",
+  "role": "instructional video host"
+ },
+ "ko-kr-training-6": {
+  "text": "이 설정 메뉴에서 오른쪽 위 버튼을 누르면 됩니다. 어렵지 않죠? 바로 다음 단계로 넘어가 볼게요.",
+  "style": "Voice is bright, breezy, and youthful",
+  "role": "instructional video host"
+ },
+ "ko-kr-training-7": {
+  "text": "준비물은 딱 세 가지예요. 영상 끝까지 보시면 누구나 쉽게 완성하실 수 있습니다.",
+  "style": "Voice is bright, breezy, and youthful",
+  "role": "instructional video host"
+ },
+ "ko-kr-training-8": {
+  "text": "자, 오늘은 아주 간단한 방법을 알려 드릴게요. 첫 번째 단계부터 차근차근 따라와 주세요.",
+  "style": "Voice is textured, resonant, and soothing",
+  "role": "instructional video host"
+ },
+ "ko-kr-training-9": {
+  "text": "자, 완성된 요리를 접시에 담아 볼게요. 색감까지 정말 먹음직스럽죠?",
+  "style": "Voice is intimate talkshow",
+  "role": "cooking show host"
+ },
+ "ko-kr-tutor-1": {
+  "text": "그런 감정이 드는 건 아주 자연스러운 일이에요. 지금 어떤 마음이 드는지 조금 더 이야기해 볼까요?",
+  "style": "Tone is reflective, calm, and reassuring",
+  "role": "counselor"
+ },
+ "ko-kr-tutor-10": {
+  "text": "첫 만남에서는 너무 많은 걸 보여주려 하지 마세요. 상대의 이야기에 진심으로 귀 기울이는 게 핵심이에요.",
+  "style": "Voice is bright, breezy, and youthful",
+  "role": "dating coach"
+ },
+ "ko-kr-tutor-11": {
+  "text": "아침 식사는 꼭 챙기시고, 단백질과 채소를 골고루 드시는 게 중요해요.",
+  "style": "Voice is crisp and eager",
+  "role": "nutritionist"
+ },
+ "ko-kr-tutor-12": {
+  "text": "이 문제는 공식을 외우기보다 원리를 이해하는 게 중요해요. 같이 한 단계씩 풀어 볼까요?",
+  "style": "Voice is crisp and eager",
+  "role": "educational tutor"
+ },
+ "ko-kr-tutor-2": {
+  "text": "아침은 꼭 챙겨 드시고예, 단백질하고 채소를 골고루 드시는 게 제일 중요합니더.",
+  "style": "Voice is light, airy, and precise",
+  "role": "nutritionist"
+ },
+ "ko-kr-tutor-3": {
+  "text": "자, 이번에는 손목에 힘을 빼고 다시 한번 쳐 볼까요? 리듬을 천천히 느껴 보세요.",
+  "style": "Voice is crisp and eager",
+  "role": "music teacher"
+ },
+ "ko-kr-tutor-4": {
+  "text": "이 문단은 주장은 좋은데예, 근거를 하나만 더 넣으면 훨씬 설득력 있을 깁니더.",
+  "style": "Currently brainstorming in a meeting. Tone is professional yet approachable",
+  "role": "writing tutor"
+ },
+ "ko-kr-tutor-5": {
+  "text": "오늘 여기까지 오신 것만으로도 큰 용기를 내신 거예요.",
+  "style": "Voice is fast-paced, articulate, energetic",
+  "role": "counselor"
+ },
+ "ko-kr-tutor-6": {
+  "text": "답장이 늦는다고 너무 조급해하지 마세요. 여유 있는 모습이 오히려 더 매력적이랍니다.",
+  "style": "Tone is enthusiastic, engaging, and fun",
+  "role": "dating coach"
+ },
+ "ko-kr-tutor-7": {
+  "text": "첫 만남에서는 너무 많은 걸 보여주려 하지 마세요. 상대의 이야기에 진심으로 귀 기울이는 게 핵심이에요.",
+  "style": "Voice is clear, medium-pitch, and friendly",
+  "role": "dating coach"
+ },
+ "ko-kr-tutor-8": {
+  "text": "좋아요, 방금 그 부분 정말 좋았어요. 이번엔 조금 더 부드럽게 이어 볼까요?",
+  "style": "Currently on podcast. Tone is professional yet approachable",
+  "role": "music teacher"
+ },
+ "ko-kr-tutor-9": {
+  "text": "간식이 당길 때는 과자 대신 견과류 한 줌을 드셔 보세요.",
+  "style": "Currently in an oscar winning film. Sounds confident and clear",
+  "role": "nutritionist"
+ }
+}
